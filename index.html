@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+    <title>The Sports DB</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <header>
+            <h1 class="text-center my-4 text-success">Search Your Favorite Team</h1>
+        </header>
+        <main>
+            <!-- search field and button -->
+            <section>
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        <div class="input-group mb-3">
+                            <input id="search-field" type="text" class="form-control border-success"
+                                placeholder="search a team">
+                            <button onclick="loadTeams()" class="btn btn-success" type="button"
+                                id="search-button">Button</button>
+                        </div>
+                        <p id="error" class="text-danger fw-bolder"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- search results -->
+            <section class="my-4">
+                <div class="row g-4">
+                    <div class="col-md-7">
+                        <div id="search-results" class="row g-4">
+                            <!-- <div class="col-md-3">
+                                <div class="card">
+                                    <img src="" alt="teams">
+                                    <div class="card-body">
+                                        <h2>Team Name</h2>
+                                        <p>team para</p>
+                                        <button class="btn btn-success btn-sm" type="button">team details</button>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div id="single-team" class="col">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
